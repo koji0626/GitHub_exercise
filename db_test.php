@@ -3,6 +3,7 @@
   if (!$link) {
     die('Ú‘±¸”sI<br>'.mysqli_connect_error());
   } else {
-    echo 'Ú‘±¬Œ÷I';
+	  echo 'Ú‘±¬Œ÷I';
+	  mysqli_set_chaeset($link, "utf8");
   }
 ?>
