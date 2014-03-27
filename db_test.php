@@ -1,7 +1,7 @@
 <?php
-  $link = mysql_connect('localhost', 'root', '');
+  $link = mysqli_connect('localhost', 'root', '');
   if (!$link) {
-    die('Ú‘±¸”sI<br>'.mysql_error());
+    die('Ú‘±¸”sI<br>'.mysqli_connect_error());
   } else {
     echo 'Ú‘±¬Œ÷I';
   }
