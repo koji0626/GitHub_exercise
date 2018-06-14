@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>
+SB仕様書利用(qoo)stub
+</title>
+<script type="text/javascript">
+function onToiawase(){
+var form = this.document.forms[0];
+	var kbn = form.kbn.value;
+	var sbKeyType = form.sbKeyType.value;
+	var sbKey = form.sbKey.value;
+	var releaseNo = form.releaseNo.value;
+
+var url = "http://si-164:8000/eps/qoo/sb_spec_sheet_get_detail.do";
+	url += "?kbn=" + form.kbn.value;
+	url += "&sbKey=" + form.sbKey.value;
+	url += "&releaseNo=" + form.releaseNo.value;
+
+	window.open(url, "_blank");
+}
+function onClear(){
+var form = this.document.forms[0];
+	form.kbn.value="1";
+	form.sbKey.value="";
+	form.releaseNo.value="";
+}
+
+
+</script>
+</head>
+<body>
+<form>
+<table border="0">
+<tr>
+	<td>処理区分</td>
+	<td><input size="16" id="kbn" value="1"></td>
+</tr>
+<tr>
+	<td>SB仕様書キー</td>
+	<td><input size="16" id="sbKey" value=""></td>
+</tr>
+<tr>
+	<td>リリースNo</td>
+	<td><input size="16" id="releaseNo"></td>
+</tr>
+<tr>
+	<td></td>
+	<td><input type="button" value="問い合わせ" onclick="onToiawase();">&nbsp;<input type="button" value="クリア" onclick="onClear();"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+
+
+
+
