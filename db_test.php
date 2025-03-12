@@ -1,9 +1,9 @@
 <?php
   $link = mysqli_connect('localhost', 'root', '');
   if (!$link) {
-    die('Ú‘±¸”sI<br>'.mysqli_connect_error());
+    die('æ¥ç¶šå¤±æ•—ï¼<br>'.mysqli_connect_error());
   } else {
-	  echo 'Ú‘±¬Œ÷I';
+	  echo 'æ¥ç¶šæˆåŠŸï¼';
 	  mysqli_set_chaeset($link, "utf8");
   }
 ?>
